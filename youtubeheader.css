@@ -1,0 +1,177 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height:55px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:60px;
+    background-color: white;
+    z-index: 100;
+}
+.first-section{
+    display :flex;
+ 
+
+}
+.second-section{
+    display:flex;
+    flex:1;
+  
+    max-width:735px;
+    align-items:center;
+}
+.third-section{
+    width:235px;
+    display:flex;
+    align-items:center;
+    flex-shrink: 0;
+
+}
+.three-line{
+    width:20px;
+    object-fit:contain;
+    margin-left:30px;
+    margin-right:30px;
+}
+.logo{
+    width:100px;
+    object-fit:cover;
+ }
+ .icon-image{
+    margin-right:3px;
+    width:30px;
+    display:flex;
+    object-fit:contain;
+ }
+ 
+ .search-button{
+    width:70px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    height:35px;
+    margin-right:10px;
+    background:rgb(229, 224, 224);
+    border-style:solid;
+    margin-bottom:2px;
+    position:relative;
+ }
+ .search-button .tooltip , .mic-button .tooltip{
+   position:absolute;
+   bottom:-20px;
+   background-color:rgb(116, 116, 116);
+   color:white;
+   right:12px;
+   font-size:15px;
+   padding-top:2px;
+   padding-left:2px;
+   padding-right:2px;
+   border-radius:2px;
+   opacity:0;
+   transition:opacity 0.15s;
+   pointer-events:none;
+   white-space: nowrap;
+ }
+ .search-button:hover .tooltip , .mic-button:hover .tooltip{
+   opacity:1;
+ }
+ .mic-button{
+    background:rgb(229, 224, 224);
+    width:40px;
+    height:45px;
+    border-radius:40px;
+    border-style: solid;
+    padding-right:5px;
+    display:flex;
+    flex-direction: column;
+ }
+ .search-button,.mic-button{
+   position:relative;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+ }
+ .search-icon{
+    width:20px;
+    height:25px;
+    object-fit:contain;
+    vertical-align: center;
+    padding-top:2px;
+    
+ }
+ .mic-icon{
+    width:25px;
+    height:25px;
+    object-fit:contain; 
+    
+    margin-left:3px; 
+ }
+ .search-bar{
+    display:flex;
+    flex:1;
+    height:30px;
+    margin-top:8px;
+    margin-bottom:10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-style:solid;
+    font-size:19px;
+    padding-left:10px;
+    width:0px;
+    box-shadow:inset 0.5px 0px 0px 1px rgba(0,0,0,0.25);
+ }
+ 
+ .search-bar::placeholder{
+    
+    font-family:"Roboto","Arial",sans-serif;
+ }
+ .app-icon,.upload-icon,.noti-icon,.pp-icon{
+   flex-shrink:0;
+ }
+.app-icon{
+   flex:1;
+   width:28px;
+   height:29px;
+   object-fit:contain;
+
+}
+.upload-icon{
+   flex:1;
+   width:25px;
+   height:25px;
+   object-fit:contain;
+   margin-left:5px;
+}
+.noti-icon{
+   flex:1;
+
+   width:30px;
+   height:30px;
+   object-fit:contain;
+   margin-left:10px;
+}
+.pp-icon{
+   flex:1;
+   width:50px;
+   height:45px;
+   object-fit:contain;
+   margin-right:35px;
+   margin-left:23px;
+}
+.notifications{
+   position:absolute;
+   top:-4px;
+   right:-2px;
+   color:white;
+   width:10px;
+   height:14px;
+   background-color: red;
+   padding-bottom:5px;
+   padding-top:2px;
+   padding-right:2px;
+   padding-left:3px;
+   border-radius:10px;
+}
